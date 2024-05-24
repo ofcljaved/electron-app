@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'" />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'" />
+    <title>Hello from Electron renderer!</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="bg-[#e0f1e7] grid items-center min-h-svh">
+    <main class="bg-white max-w-screen-md w-full mx-auto rounded-lg p-8 m-8">
+      <h1 class="text-slate-700 text-2xl font-semibold">Contact Us</h1>
+      <form class="grid grid-cols-2 gap-x-4 gap-y-6">
+        <div class="grid gap-2">
+          <label for="fname" class="text-slate-500 text-sm"
+            >First Name <span class="text-emerald-500">*</span></label
+          >
+          <input
+            type="text"
+            name="fname"
+            id="fname"
+            class="border border-emerald-600 rounded py-2 px-4 focus-visible:border-emerald-400 outline-none" />
+        </div>
+        <div class="grid gap-2">
+          <label for="lname" class="text-slate-500 text-sm"
+            >Last Name <span class="text-emerald-500">*</span></label
+          >
+          <input
+            type="text"
+            name="lname"
+            id="lname"
+            class="border border-emerald-600 rounded py-2 px-4 focus-visible:border-emerald-400 outline-none" />
+        </div>
+        <div class="grid gap-2 col-span-2">
+          <label for="email" class="text-slate-500 text-sm"
+            >Email Address <span class="text-emerald-500">*</span></label
+          >
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="border border-emerald-600 rounded py-2 px-4 focus-visible:border-emerald-400 outline-none" />
+        </div>
+        <div class="grid gap-2 col-span-2">
+          <p class="text-slate-500 text-sm">
+            Query Type <span class="text-emerald-500">*</span>
+          </p>
+          <div class="grid grid-cols-2 gap-x-4">
+            <label
+              for="support"
+              class="border border-emerald-600 rounded py-2 px-4 focus-visible:border-emerald-400 outline-none flex gap-3">
+              <input type="radio" name="query" id="support" />
+              General Enquiry
+            </label>
+            <label
+              for="general"
+              class="border border-emerald-600 rounded py-2 px-4 focus-visible:border-emerald-400 outline-none flex gap-3">
+              <input type="radio" name="query" id="general" />
+              Support Enquiry
+            </label>
+          </div>
+        </div>
+        <div class="grid gap-2 col-span-2">
+          <label for="msg" class="text-slate-500 text-sm"
+            >Message <span class="text-emerald-500">*</span></label
+          >
+          <textarea
+            name="msg"
+            id="msg"
+            class="border border-emerald-600 rounded py-2 px-4 focus-visible:border-emerald-400 outline-none"></textarea>
+        </div>
+        <div class="grid col-span-2 grid-flow-col justify-start gap-2">
+          <input type="checkbox" name="consent" id="consent" />
+          <label for="consent" class="text-slate-600 text-sm"
+            >I consent to being contacted by team
+            <span class="text-emerald-500">*</span></label
+          >
+        </div>
+        <input
+          id="submit"
+          type="button"
+          value="Submit"
+          class="col-span-2 bg-emerald-600 text-white p-3 rounded-md" />
+      </form>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
