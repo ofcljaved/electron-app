@@ -1,0 +1,16 @@
+{
+  "name": "electron-app",
+  "version": "1.0.0",
+  "description": "Basic Hello World! application with electronjs",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "start": "electron ./src/main.js"
+  },
+  "keywords": [],
+  "author": "Javed",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^30.0.8"
+  }
+}
